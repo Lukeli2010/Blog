@@ -262,6 +262,23 @@
   <h1>建站记录</h1>
 
 <p>建立这个博客花费了我2天时间。</p>
+<p>我请了同机房一位同学帮我搞，但是由于某些未知的原因，我的电脑没有git，于是事情变得复杂起来。</p>
+<p>在此记录一下我经历了什么：</p>
+<ul>
+<li>电脑没有git：装上就行了</li>
+<li>git不在PATH下：加上就行了</li>
+<li>装了mkdocs也不能直接用：前面加上 <code>python -m</code> </li>
+<li>github访问很慢，还经常403或者SSH错误：这个没什么好的解决办法，只能反复尝试，或者试试<code>git config --global http.sslVerify false</code></li>
+<li>不允许输入密码（<code>remote: Support for password authentication was removed on August 13, 2021.</code>）：照着它的提示建立一个 <code>token</code> 即可。</li>
+<li>使用 <code>git remote set-url origin https://&lt;token&gt;@github.com/Lukeli2010/Blog.git</code> 之后，第一次 <code>push</code> 没问题，之后就开始让我输入密码，且无论输入密码还是token都提示不允许输入密码：将url改为<code>https://github.com/Lukeli2010/blog.git</code>之后就会提示你输入用户名和密码，此时输入用户名和Token即可。</li>
+<li>访问网站显示了一个没有任何排版的界面，而且按钮点了就404：事实上这是mkdocs的404界面（我也不知道为什么），出现这个的原因是因为删除了index.md，加上就好了。</li>
+</ul>
+<p>感谢一些提供了帮助的文章：</p>
+<p><a href="https://blog.csdn.net/mukes/article/details/115693833">Git 详细安装教程（详解 Git 安装过程的每一个步骤）_git安装-CSDN博客</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/401978754">2021.8.13起，Github要求使用基于令牌的身份验证 - 知乎</a></p>
+<p><a href="https://blog.csdn.net/qq_41261251/article/details/116021097">so easy！从头教你用mkdocs构建个人博客系统~_mkdocs教程-CSDN博客</a></p>
+<p><a href="https://docs.github.com/zh">GitHub Docs</a></p>
+<p><a href="https://chat.deepseek.com/">DeepSeek - 探索未至之境</a></p>
 
 
 
