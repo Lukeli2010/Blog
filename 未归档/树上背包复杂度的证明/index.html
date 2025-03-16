@@ -10,28 +10,28 @@
         <meta name="author" content="Luke_li">
       
       
-        <link rel="canonical" href="https://lukeli2010.github.io/Blog/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/">
+        <link rel="canonical" href="https://lukeli2010.github.io/Blog/%E6%9C%AA%E5%BD%92%E6%A1%A3/%E6%A0%91%E4%B8%8A%E8%83%8C%E5%8C%85%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E8%AF%81%E6%98%8E/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../../%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/">
       
       
-        <link rel="next" href="../%E6%9C%AA%E5%BD%92%E6%A1%A3/%E6%A0%91%E4%B8%8A%E8%83%8C%E5%8C%85%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E8%AF%81%E6%98%8E/">
+        <link rel="next" href="../../%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%AD%97%E7%AC%A6%E4%B8%B2/Manacher/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>建站相关 - Luke_li 的博客</title>
+        <title>树上背包的复杂度证明 - Luke_li 的博客</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,14 +52,14 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -68,7 +68,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -101,9 +101,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="Luke_li 的博客" class="md-header__button md-logo" aria-label="Luke_li 的博客" data-md-component="logo">
+    <a href="../.." title="Luke_li 的博客" class="md-header__button md-logo" aria-label="Luke_li 的博客" data-md-component="logo">
       
-  <img src="../icons/vector-polygon-variant.svg" alt="logo">
+  <img src="../../icons/vector-polygon-variant.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              建站相关
+              树上背包的复杂度证明
             
           </span>
         </div>
@@ -217,7 +217,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -232,11 +232,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/" class="md-tabs__link">
         
   
     
@@ -251,11 +249,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../%E6%9C%AA%E5%BD%92%E6%A1%A3/%E6%A0%91%E4%B8%8A%E8%83%8C%E5%8C%85%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E8%AF%81%E6%98%8E/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   未归档
@@ -279,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%AD%97%E7%AC%A6%E4%B8%B2/Manacher/" class="md-tabs__link">
+        <a href="../../%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%AD%97%E7%AC%A6%E4%B8%B2/Manacher/" class="md-tabs__link">
           
   
   知识点
@@ -315,9 +315,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Luke_li 的博客" class="md-nav__button md-logo" aria-label="Luke_li 的博客" data-md-component="logo">
+    <a href="../.." title="Luke_li 的博客" class="md-nav__button md-logo" aria-label="Luke_li 的博客" data-md-component="logo">
       
-  <img src="../icons/vector-polygon-variant.svg" alt="logo">
+  <img src="../../icons/vector-polygon-variant.svg" alt="logo">
 
     </a>
     Luke_li 的博客
@@ -332,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -350,6 +350,71 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    建站相关
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    未归档
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            未归档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
     
   
   
@@ -359,12 +424,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    建站相关
+    树上背包的复杂度证明
     
   </span>
   
@@ -376,7 +443,7 @@
         
   
   <span class="md-ellipsis">
-    建站相关
+    树上背包的复杂度证明
     
   </span>
   
@@ -389,6 +456,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -397,18 +466,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      建站记录
+      定义：什么是树上背包？
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      日常维护
+      多叉树转二叉树
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分类讨论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      实测
     </span>
   </a>
   
@@ -418,66 +505,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    未归档
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            未归档
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E6%9C%AA%E5%BD%92%E6%A1%A3/%E6%A0%91%E4%B8%8A%E8%83%8C%E5%8C%85%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E8%AF%81%E6%98%8E/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    树上背包的复杂度证明
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -575,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%AD%97%E7%AC%A6%E4%B8%B2/Manacher/" class="md-nav__link">
+      <a href="../../%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%AD%97%E7%AC%A6%E4%B8%B2/Manacher/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -644,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/" class="md-nav__link">
+      <a href="../../%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -691,6 +718,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -699,18 +728,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      建站记录
+      定义：什么是树上背包？
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      日常维护
+      多叉树转二叉树
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分类讨论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      实测
     </span>
   </a>
   
@@ -732,31 +779,53 @@
 
 
 
-  <h1>建站相关</h1>
-
-<h2 id="_1">建站记录</h2>
-<p>建立这个博客花费了我2天时间。</p>
-<p>我请了同机房一位同学帮我搞，但是由于某些未知的原因，我的电脑没有git，于是事情变得复杂起来。</p>
-<p>在此记录一下我经历了什么：</p>
+<h1 id="_1">树上背包的复杂度证明</h1>
+<blockquote>
+<p>尚未归档</p>
+</blockquote>
+<p>今天我发现树上背包的复杂度并非如我想象一样是 <span class="arithmatex">\(O(n^2)\)</span> 的，而是 <span class="arithmatex">\(O(nm)\)</span> 的。我们来看看证明吧。</p>
+<h3 id="_2">定义：什么是树上背包？</h3>
+<p>此处的树上背包定义如下：
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">fa</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">sz</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="n">head</span><span class="p">[</span><span class="n">u</span><span class="p">];</span><span class="n">k</span><span class="p">;</span><span class="n">k</span><span class="o">=</span><span class="n">e</span><span class="p">[</span><span class="n">k</span><span class="p">].</span><span class="n">next</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="o">=</span><span class="n">e</span><span class="p">[</span><span class="n">k</span><span class="p">].</span><span class="n">to</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="o">==</span><span class="n">fa</span><span class="p">)</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">u</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">min</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">sz</span><span class="p">[</span><span class="n">u</span><span class="p">]);</span><span class="o">++</span><span class="n">j</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">k</span><span class="o">&lt;=</span><span class="n">min</span><span class="p">(</span><span class="n">m</span><span class="o">-</span><span class="n">j</span><span class="p">,</span><span class="n">sz</span><span class="p">[</span><span class="n">v</span><span class="p">]);</span><span class="o">++</span><span class="n">k</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">                </span><span class="c1">// dp[u][j+k] &lt;- dp[u][j] * dp[v][k]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
+</span></code></pre></div>
+^[转载并修改自 https://www.cnblogs.com/AWhiteWall/p/14030045.html]</p>
+<p>树上背包可以理解为是把所有子树的信息合并了起来。接下来我们要证明它的复杂度是 <span class="arithmatex">\(O(nm)\)</span>。</p>
+<h3 id="_3">多叉树转二叉树</h3>
+<p>这一步其实没有什么必要，但是这样简单一点。</p>
+<p>我们做书上背包的时候，不是把一个前缀所有的子树与下一个子树合并吗？把这个合并当成一个二叉（前缀的子树是左叉，下一个子树是右差）就可以了。</p>
+<h3 id="_4">分类讨论</h3>
+<p>首先明确一点：一个子树的大小要么 <span class="arithmatex">\(&lt;m\)</span> 要么 <span class="arithmatex">\(=m\)</span>，因为它 <span class="arithmatex">\(&gt;m\)</span> 的部分会被截断不参与后面的计算。</p>
 <ul>
-<li>电脑没有git：装上就行了</li>
-<li>git不在PATH下：加上就行了</li>
-<li>装了mkdocs也不能直接用：前面加上 <code>python -m</code> </li>
-<li>github访问很慢，还经常403或者SSH错误：这个没什么好的解决办法，只能反复尝试，或者试试<code>git config --global http.sslVerify false</code></li>
-<li>不允许输入密码（<code>remote: Support for password authentication was removed on August 13, 2021.</code>）：照着它的提示建立一个 <code>token</code> 即可。</li>
-<li>使用 <code>git remote set-url origin https://&lt;token&gt;@github.com/Lukeli2010/Blog.git</code> 之后，第一次 push 没问题，之后就开始让我输入密码，且无论输入密码还是token都提示不允许输入密码：将url改为<code>https://github.com/Lukeli2010/blog.git</code>之后就会提示你输入用户名和密码，此时输入用户名和Token即可。</li>
-<li>把Token粘贴在了网站的一个页面里，然后 push 的时候报错了：按照提示，删除“机密”即可。如果还有问题，可以点击它给出的链接暂时取消“机密扫描”，持续3小时，此时赶紧覆写“机密”即可。</li>
-<li>访问网站显示了一个没有任何排版的界面，而且按钮点了就404：事实上这是mkdocs的404界面（我也不知道为什么），出现这个的原因是因为删除了index.md，加上就好了。</li>
+<li>
+<p>如果两个子树中至少有一个 <span class="arithmatex">\(大小=m\)</span>：设另一个的 <span class="arithmatex">\(大小=k\)</span>，那么本次合并的复杂度是 <span class="arithmatex">\(O(mk)\)</span>，且合并之后父节点只剩 <span class="arithmatex">\(m\)</span> 的大小，可以理解为消去了 <span class="arithmatex">\(k\)</span> 的大小。这样最多消去 <span class="arithmatex">\(\dfrac{n}{k}\)</span> 次，因此复杂度是 <span class="arithmatex">\(O(mk\dfrac{n}{k})=O(nm)\)</span> 的。</p>
+</li>
+<li>
+<p>如果两个子树的大小都 <span class="arithmatex">\(&lt;m\)</span>：</p>
+<ul>
+<li>如果合并完的子树大小 <span class="arithmatex">\(&lt;m\)</span>：这种的合并相当于是把两边子树中的点在 LCA 处产生 <span class="arithmatex">\(O(1)\)</span> 的复杂度。对于这整棵子树，产生的总共复杂度为其中点两两匹配产生的复杂度，为 <span class="arithmatex">\(O(size^2)\)</span>。不过我们暂时不管。我们会在它的祖先计算它的复杂度。</li>
+<li>如果合并完的子树大小 <span class="arithmatex">\(=m\)</span>：根据上一条，对于这样一个分叉，两侧的子树内会产生 <span class="arithmatex">\(O(size^2)&lt;O(m^2)\)</span> 的复杂度，而本次的合并会产生 <span class="arithmatex">\(O(size_{ls}size_{rs})\)</span> 的复杂度，总的来说没有超过 <span class="arithmatex">\(O(m^2)\)</span> 的量级。我们称呼一个这样的合并所在的子树为一个“S结构”，那么显然这种结构没有互相包含关系。因此，这样的合并在全局最多发生 <span class="arithmatex">\(\dfrac{n}{m}\)</span> 次，每次复杂度为 <span class="arithmatex">\(O(m^2)\)</span>，总的复杂度就在 <span class="arithmatex">\(O(nm)\)</span> 量级。</li>
+<li>第一种情况还有一种情况没被考虑：
+  如图。标粗的点的大小 <span class="arithmatex">\(=m\)</span>，而其他点大小 <span class="arithmatex">\(&lt;m\)</span>.
+<a class="glightbox" href="https://img2024.cnblogs.com/blog/3526387/202503/3526387-20250316112615715-2059020020.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://img2024.cnblogs.com/blog/3526387/202503/3526387-20250316112615715-2059020020.png" /></a>
+  我们发现这种情况就是最开始说的那种情况（两个子树中至少有一个 <span class="arithmatex">\(大小=m\)</span>）。而这颗 <span class="arithmatex">\(&lt;m\)</span> 的子树内部产生的复杂度是小于 <span class="arithmatex">\(O(m^2)\)</span> 的，对这种情况只是一个常数级复杂度。</li>
 </ul>
-<p>感谢一些提供了帮助的文章：</p>
-<p><a href="https://blog.csdn.net/mukes/article/details/115693833">Git 详细安装教程（详解 Git 安装过程的每一个步骤）_git安装-CSDN博客</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/401978754">2021.8.13起，Github要求使用基于令牌的身份验证 - 知乎</a></p>
-<p><a href="https://blog.csdn.net/qq_41261251/article/details/116021097">so easy！从头教你用mkdocs构建个人博客系统~_mkdocs教程-CSDN博客</a></p>
-<p><a href="https://docs.github.com/zh">GitHub Docs</a></p>
-<p><a href="https://chat.deepseek.com/">DeepSeek - 探索未至之境</a></p>
-<h2 id="_2">日常维护</h2>
-<p>想要 push 自己的修改：在 blog 目录下<code>python -m mkdocs gh-deploy</code>即可。</p>
-<p>修改了 docs 后导航栏没有改变：修改 yml 文件中的 nav</p>
+</li>
+</ul>
+<p>综上所述，我们证明了树上背包的复杂度是 <span class="arithmatex">\(O(nm)\)</span> 的。别看我们证明中忽略了常数，其实常数是很小的。</p>
+<h3 id="_5">实测</h3>
+<p>以 <a href="https://www.luogu.com.cn/problem/P3177">P3177 [HAOI2015] 树上染色</a> 为例，HTC 的代码在 <span class="arithmatex">\(n=10^5,k=10^3\)</span> 的数据下只转移了 <span class="arithmatex">\(10^8\)</span> 次，说明随机数据下常数几乎为 <span class="arithmatex">\(1\)</span>.（当然也可能是我们数据太水了）</p>
 
 
 
@@ -806,12 +875,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "navigation.top", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
@@ -819,7 +888,7 @@
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../javascripts/tablesort.js"></script>
+        <script src="../../javascripts/tablesort.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
